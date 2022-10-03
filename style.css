@@ -1,0 +1,933 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--var-font-family-2);
+    outline: none;
+    /* list-style-type: none; */
+    text-decoration: none;
+}
+:root{
+    --var-font-family: 'Aboreto', cursive;
+    --var-font-family-1: 'Raleway', sans-serif;
+    --var-Background-main: white;
+    --var-Background-sub:aquamarine;
+    --var-font-family-2: 'Anek Telugu', sans-serif;
+    --var-color: rgb(87, 21, 21);
+}
+#navigationBar{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.navigationBar img{
+    width: 100px;
+    height: 60px;
+}
+.navigationBar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navigationBar ul li{
+    padding-right: 50px;
+}
+.navigationBar ul li a{
+    text-decoration: none;
+}
+.navigationBar ul li a:hover{
+    border-bottom: 2px solid var(--var-Background-main);
+}
+.navigationBar ul{
+    display: flex;
+    list-style-type: none;
+}
+.navigationBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--var-Background-sub);
+    padding: 20px 40px;
+}
+
+#footer{
+    bottom: 0;
+    left: 0;
+}
+.footer{
+    background-color: black;
+    color: var(--var-Background-main);
+    height: fit-content;
+}
+.footer_link{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-between;
+}
+.footer_link .logo{
+    /* background-color: blue; */
+    margin: 10px;
+    padding: 10px;
+}
+.footer_link .logo ul li a img{
+    width: 100px;
+    height: 60px;
+    filter: saturate(0);
+}
+.footer_link .logo ul li a img:hover{
+
+    filter: saturate(1);
+}
+.footer_link ul li{
+    list-style: none;
+    line-height: 2.5rem;
+    display: block;
+}
+.footer_link a{
+    text-decoration: none;
+    color: var(--var-Background-main);
+}
+.footer_link  ul li a:hover{
+   color: orange; 
+}
+.Footer_socialLink{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.Footer_socialLink i{
+    padding: 10px 40px;
+    font-size: 1.5rem;
+}
+.footer .copyright{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    color: gray;
+}
+.fa-twitter:hover{
+    color: blue;
+}
+.fa-facebook:hover{
+    color: blue;
+}
+.fa-instagram:hover{
+    color: rgb(210, 19, 92);
+}
+.fa-youtube:hover{
+    color: red;
+}
+.fa-linkedin:hover{
+    color: blue;
+}
+.HomeCoverPage{
+    background-image: url(https://img.freepik.com/free-photo/african-american-businessman-using-laptop-cafe_1157-46908.jpg?w=996&t=st=1663831820~exp=1663832420~hmac=8e7bdfb54d5f05f4a4447c4c584bf716da893faa299aab6d337e6a3be8894e7b);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.Coverpage{
+    background-color: rgba(105, 129, 129, 0.419);
+    height: inherit;
+    padding-left: 200px;
+    color: white;
+    display: grid;
+    align-items: center;
+}
+.Coverpage h1{
+    color: white;
+    padding-top: 100px;
+    font-size: 3.5rem;
+}
+.Coverpage button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.Coverpage button:hover{
+    background-color: transparent;
+
+}
+.trusted{
+    /* filter: saturate(0); */
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    z-index: 1;
+}
+.Benefit{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin: 20px 250px;
+    z-index: -1;
+}
+.Benefit h1{
+    text-align: center;
+    border-bottom: 4px solid green;
+    border-width: 50%;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+.benafitList{
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 10px 20px;
+    gap: 2rem;
+    margin: 30px 100px;
+}
+.Benefit_no{
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    padding: 10px;
+}
+.Benefit_no i{
+    font-size: 4rem;
+    padding: 20px 0;
+}
+.Benefit_no .fa-feather, .fa-leaf{
+    color: green;
+}
+.Benefit_no  .fa-money-bill-trend-up{
+    color: goldenrod;
+}
+.Benefit_no .fa-plug-circle-xmark{
+    color: red;
+}
+.Benefit_no h3{
+    padding: 20px 0;
+}
+.Benefit_no:hover{
+   box-shadow: 2px 2px 10px gray;
+}
+.Trainers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    background-color: aquamarine;
+    margin: 30px 0;
+}
+.Trainers .content{
+    height: 100%;
+    background-color: gray;
+}
+/* ==============================
+================ Error ==================
+================================= */
+.lessons h1,h3,i{
+    text-align: center;
+}
+.para{
+    text-align: center;
+}
+
+.lessons h3{
+    border-bottom: 4px solid green;
+    width: fit-content;
+}
+.lessons{
+    display: grid;
+    justify-items: center;
+    margin-top: 100px;
+}
+.List_lessons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 70px 20px;
+    gap: 2rem;
+}
+.List_lessons .LessonNo{
+    /* background-color: salmon; */
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    box-shadow: 1px 1px 5px gray;
+}
+.LessonNo i{
+    font-size: 4rem;
+    padding: 20px 0;
+    color: green;
+}
+.LessonNo:hover{
+    box-shadow: 2px 2px 10px rebeccapurple;
+ }
+ .Testmonies{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    gap: 1rem;
+    justify-items: center;
+    margin: 0 10vw;
+ }
+ .Testmonies .Testmonial_No{
+    height: 100%;
+    width: 100%;
+    /* background-color: gold; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 2px 2px 10px gray;
+    
+ }
+ .Testmonies .Testmonial_No:hover{
+    box-shadow: 2px 2px 10px aquamarine;
+ }
+ .Testmonies .Testmonial_No .profile{
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+ }
+ .Testmonies .Testmonial_No .profile .empty{
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    /* background-color: navajowhite; */
+ }
+ .Testmonies .Testmonial_No .profile .img{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+ }
+ .Testmonies .Testmonial_No .profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 1px solid green;
+ }
+ .Testmonial_No .MainContent{
+    padding: 20px;
+ }
+ .TestmoniesPure{
+    margin-bottom: 100px;
+ }
+ .TestmoniesPure h1{
+   text-align: center;
+   padding: 30px;
+
+ }
+ .empty .fa-star, .fa-star-half-stroke{
+    color: goldenrod;
+ }
+ .PlanTojoin{
+    height: 50vh;
+    /* background-color: olive; */
+    background: url(img/background_home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ .PlanTojoin h1{
+    text-align: center;
+    color: white;
+ }
+ .PlanTojoin .overlay{
+    background-color: rgba(87, 21, 21, 0.34);
+    height: 50vh;
+    padding-top: 30px;
+    
+ }
+/* ================ ABOUT ====================== */
+.About_Us{
+    height: 80vh;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    overflow: hidden;
+}
+.About_into{
+    /* background-color: gainsboro; */
+    height: 100%;
+    width: 100%;
+    margin-left: 100px;
+}
+.Abou_img{
+    z-index: -1;
+    width: 250px;
+}
+
+.About_into h1{
+    font-size: 3rem;
+    margin-top: 30px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+.About_into p{
+    padding-left: 30px;
+    /* line-height: 2rem; */
+}
+.rated_Reviews{
+    padding-top: 100px;
+}
+.rated_Reviews i{
+    color: goldenrod;
+}
+.Trusted_in_GoodHands h4{
+    text-align: center;
+
+}
+.TrustedBy{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* height: 100%; */
+    background-color: rgba(128, 128, 128, 0.318);
+    gap: 2rem;
+    justify-items: center;
+    padding: 10px 100px;
+    text-align: center;
+}
+.TrustedBy .TrustedNo{
+    height: 100%;
+    width: 100%;
+    color: orange;
+}
+.Project_professional{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 30px 50px;
+    height: fit-content;
+    gap: 3rem;
+    
+}
+.Project_professional .Project_content{
+    height: fit-content;
+    list-style-type: decimal;
+    padding: 20px 20px;
+    background-color: aquamarine;
+}
+
+.Project_professional .Project_content ol{
+    padding-left: 20px;
+}
+.UpdatesOf_PMP{
+    display: grid;
+    height: fit-content;
+    margin: 50px 50px;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+.UpdatesOf_PMP .img_with_Content{
+    background-color: rgb(51, 92, 153);
+    height: 100%;
+}
+.UpdatesOf_PMP .img_with_Content:hover{
+    box-shadow: 1px 1px 10px gray;
+}
+.UpdatesOf_PMP .img_with_Content:nth-child(2){
+padding: 0px 30px;
+padding-top: 30px;
+}
+.UpdatesOf_PMP .img_with_Content:nth-child(1){
+    background: url(https://img.freepik.com/free-photo/thinking-promising-project_1098-15943.jpg?w=1060&t=st=1664181275~exp=1664181875~hmac=7ec814cc1882bf7a55f4b61bc74a8949f940d6f090c80307f6c149afc506469e);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.UpdateOfPMp{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin: 0px 20px; */
+    margin-top: 100px;
+    box-shadow: 2px 2px 10px gray;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+.UpdateOfPMp .content{
+    padding: 50px;
+}
+.UpdateOfPMp p{
+    padding: 20px;
+
+}
+.UpdateOfPMp .img{
+    background: url(https://img.freepik.com/free-photo/focused-workaholic-african-american-businesswoman-working-company-financial-charts-presentation_482257-6360.jpg?w=1060&t=st=1664183546~exp=1664184146~hmac=1047e241c94e5401bc8425649ef2540c3062e5af3c136c5389e27b43174ee528);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Potential_PMP{
+    height: fit-content;
+    text-align: center;
+    cursor: cell;
+    margin-bottom: 20px;
+    /* background-color: gold; */
+}
+.Potential_PMP table{
+    border-collapse: collapse;
+    display: grid;
+    justify-items: center;
+    padding-top: 20px;
+}
+.Potential_PMP td{
+    padding: 20px 40px;
+}
+.Potential_PMP td:hover{
+    box-shadow: 1px 1px 5px aquamarine;
+}
+.prerequisites{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.prerequisites .content{
+    padding: 20px;
+}
+.prerequisites .content ol{
+    padding: 20px;
+}
+.prerequisites .img{
+    background: url(https://img.freepik.com/free-photo/dark-skinned-woman-colleagues-corporate-start-up-office-working-finish-project-diverse-team-business-people-analyzing-company-financial-reports-from-computer_482257-7321.jpg?w=1060&t=st=1664189880~exp=1664190480~hmac=d3aa95d60d41c2c87d1efae49ef790978c9163daf262b97342110b32f9080561);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Learing_Object{
+    padding: 30px;
+    line-height: 2rem;
+}
+.Training_Learn{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: 50px 0px;
+    box-shadow: 2px 2px 10px olive;
+}
+.Training_Learn .img{
+    background: url(https://img.freepik.com/free-photo/workplace-results-professional-report-accounting-during_1418-61.jpg?w=1060&t=st=1664192787~exp=1664193387~hmac=03ea579a9f3cbb1cf9508228c531f641bc2897b813083394df7944596b2e11c1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Who_shouldLearn{
+    display: grid;
+    justify-items: center;
+    background: url(https://img.freepik.com/free-photo/workplace-results-professional-report-accounting-during_1418-61.jpg?w=1060&t=st=1664192787~exp=1664193387~hmac=03ea579a9f3cbb1cf9508228c531f641bc2897b813083394df7944596b2e11c1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.whoshoulr{
+    background-color: rgba(255, 0, 0, 0.336);
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.Course_outile{
+    padding: 0 30px;
+}
+.course{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 70px 0;
+}
+.course .img{
+    background: url(https://img.freepik.com/free-vector/team-leader-managing-project_1262-21430.jpg?w=1060&t=st=1664196018~exp=1664196618~hmac=c5fca0ab11bb0ac95efba6774a57d783d3001a9161802cabce0ceba668aabb08);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.course ol{
+    padding-left: 50px;
+}
+.values_tra{
+    height: 30vh;
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.values_tra .ValueNo{
+    /* background-color: aquamarine; */
+    height: fit-content;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+    cursor: help;
+}
+.values_tra .ValueNo:hover{
+    box-shadow: 1px 1px 5px rgba(255, 166, 0, 0.39);
+}
+.values_tra .ValueNo .img{
+    background: url(https://www.amideast.org/sites/default/files//R.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+.Importance_Certification{
+    margin: 50px 0px;
+    background: url(https://img.freepik.com/free-photo/blur-hospital-clinic-interior_1203-8618.jpg?w=1060&t=st=1664200742~exp=1664201342~hmac=b33e749dac0e593d901b042b4eaf798d6539d6a16f040fcf25f85800a31df685);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.ImportantInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: darkcyan;
+}
+.Importance_No{
+    padding: 20px;
+    text-align: right;
+}
+.Importance_No:nth-child(2){
+    text-align: center;
+}
+.Importance_No:nth-child(3){
+    text-align: left;
+}
+.value_benefit_pro{
+    padding: 0 50px;
+}
+.value_benefit_pro ol{
+    padding: 0 50px;
+}
+.Testmonies_all{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 10px 50px;
+}
+.Testmonies_all .TestmoniesNumb{
+    height: 400px;
+    background-color: green;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 10px;
+}
+.Testmonies_all .TestmoniesNumb:hover{
+    box-shadow: 2px 2px  5px 2px rgba(128, 128, 128, 0.448);
+}
+.Testmonies_all .TestmoniesNumb .profile{
+    background-color: wheat;
+    height: 100%;
+}
+.Testmonies_all .TestmoniesNumb .profile .img{
+    height: 40%;
+    background-color: yellow;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.Testmonies_all .TestmoniesNumb .profile .img img{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+}
+.Testmonies_all .TestmoniesNumb .content{
+    background-color: navy;
+    padding: 20px;
+    color: white;
+}
+.Events_All{
+    display: grid;
+    justify-items: center;
+    background: url(img/background_home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.Events_All th{
+    padding: 10px 10px;
+    background-color: bisque;
+    width: 300px;
+}
+.Events_All td{
+    padding: 10px 10px;
+    background-color: bisque;
+    width: 300px;
+}
+.Events_All{
+    padding-top: 30px;
+}
+.Gallery_all .img_no_TypeOne{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: fit-content;
+    padding-top: 20px;
+    gap: 2rem;
+    
+}
+.Gallery_all .img_no_TypeOne img{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    box-shadow: 1px 1px 10px gray;
+}
+.Gallery_all .img_no_TypeOne img:hover{
+    transform: scale(1.1);
+    animation: 2s;
+}
+.Clients_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* background-color: greenyellow; */
+    height: fit-content;
+    gap: 2rem;
+    margin: 10px 30px;
+
+}
+.Clients_list .clientNo{
+    width: 100%;
+    height: 100%;
+    background-color: rebeccapurple;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    box-shadow: 1px 1px 10px gray;
+}
+.Clients_list .clientNo .profile{
+    height: 100%;
+    background-color: red;
+}
+.Clients_list .clientNo .profile .img{
+    height: fit-content;
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.Clients_list .clientNo .profile .img img{
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+}
+.OURpartiner{
+    height: 35vh;
+    background-color: khaki;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.OURpartiner .PartinerNo{
+    width: 100%;
+    height: 100%;
+    background-color: hotpink;
+
+}
+
+/* ======== mobile Phone */
+@media screen and (max-width: 600px){
+    .navigationBar img {
+        width: 70px;
+        height: 42px;
+    }
+    .navigationBar ul {
+
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        display: none;
+    }
+    .Coverpage h1 {
+        color: white;
+        padding-top: 100px;
+        font-size: 2.5rem;
+    }
+    .trusted{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .Benefit {
+        margin: 10px;
+    }
+    .benafitList {
+        margin: 10px;
+        padding: 10px;
+        gap: 0;
+    }
+    .Benefit_no{
+        width: fit-content;
+    }
+    .Benefit_no i {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    .benafitList {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        justify-items: center;
+        /* padding: 10px 20px; */
+        /* gap: 2rem; */
+        /* margin: 30px 100px; */
+    }
+    .List_lessons {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+        /* margin: 70px 20px; */
+        gap: 2rem;
+    }
+    .List_lessons {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+        /* margin: 70px 20px; */
+        gap: 2rem;
+    }
+    .Testmonies {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1fr; */
+        height: fit-content;
+        gap: 1rem;
+        /* justify-items: center; */
+        margin: 0 10px;
+    }
+    .PlanTojoin {
+        height: fit-content;
+        /* background-color: olive; */
+        background: url(img/background_home.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .footer_link {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 25% 25% 25% 25%; */
+        justify-content: space-between;
+    }
+    .Footer_socialLink i {
+        padding: 10px 10px;
+        font-size: 1.5rem;
+    }
+    .Coverpage{
+        padding: 5px;
+    }
+    .HomeCoverPage{
+        height: fit-content;
+    }
+    .Potential_PMP td {
+        padding: 4px 10px;
+        font-size: 10px;
+        font-size: 12px;
+    }
+    .About_Us{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        overflow: hidden;
+    }
+    .About_into {
+        margin-left: 10px;
+    }
+    .Project_professional{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .UpdatesOf_PMP{
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        margin: 0;
+    }
+    .UpdateOfPMp .content {
+        padding: 0px;
+    }
+    .UpdateOfPMp {
+        display: grid;
+        grid-template-columns: 7fr 1fr;
+        /* margin: 0px 20px; */
+        margin-top: 50px;
+        box-shadow: 2px 2px 10px gray;
+        padding-left: 5px;
+        margin-bottom: 50px;
+    }
+    .Project_professional {
+        margin: 30px 20px;
+    }
+    .prerequisites .content {
+        padding: 5px;
+    }
+    .prerequisites {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .Training_Learn {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* gap: 3rem; */
+        /* margin: 50px 0px; */
+        box-shadow: 2px 2px 10px olive;
+    }
+    .Why_you_ShouldAttend{
+        padding: 5px 10px;
+    }
+    .course {
+        display: flex;
+        flex-direction: column;
+    }
+    .values_tra{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .ImportantInfo{
+        display: flex;
+        flex-direction: column;
+    }
+    .value_benefit_pro {
+        padding: 0 5px;
+    }
+    .Testmonies_all{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .Testmonies_all .TestmoniesNumb {
+        height: fit-content;
+        /* background-color: green; */
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 0;
+    }
+    .Events_All{
+        padding-top: 10px;
+    }
+    .Events_All table{
+        font-size: 8px;
+    }
+    .Events_All td {
+        padding: 0;
+        background-color: bisque;
+        width: 300px;
+    }
+    .Gallery_all .img_no_TypeOne {
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .Gallery_all .img_no_TypeOne img {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        box-shadow: 1px 1px 10px gray;
+    }
+    .Clients_list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: greenyellow;
+        height: fit-content;
+        gap: 0rem;
+        margin: 5px 3px;
+    }
+    
+}
